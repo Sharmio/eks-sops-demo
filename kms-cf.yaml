@@ -150,6 +150,7 @@ Resources:
           Effect: Allow
           Principal:
             AWS: 
+            # replace with your AWS IAM user or role
             - arn:aws:iam::412088913008:user/mohitsharma
           Action:
           - kms:Create*
@@ -169,6 +170,7 @@ Resources:
           Effect: Allow
           Principal:
             AWS: 
+            # replace with your AWS IAM user or role
             - arn:aws:iam::412088913008:user/mohitsharma
             - arn:aws:iam::412088913008:user/developer
           Action:
