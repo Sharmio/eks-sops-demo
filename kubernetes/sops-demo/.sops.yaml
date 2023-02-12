@@ -1,0 +1,3 @@
+creation_rules:
+  - path_regex: .*/*development/*
+    kms: "arn:aws:kms:us-east-1:412088913008:alias/lightlytics-kms-demo" 
