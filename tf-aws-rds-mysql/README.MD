@@ -22,7 +22,7 @@ This module provides recommended settings:
 
 ```hcl
 module "rds_mysql" {
-  source            = "git::https://github.com/tmknom/terraform-aws-rds-mysql.git?ref=tags/2.0.0"
+  source            = "https://github.com/Sharmio/eks-sops-demo/tree/main/tf-aws-rds-mysql"
   identifier        = "your-identifier"
   engine_version    = "5.7.28"
   instance_class    = "db.t2.small"
@@ -39,14 +39,13 @@ module "rds_mysql" {
 
 ```hcl
 module "rds_mysql" {
-  source            = "git::https://github.com/tmknom/terraform-aws-rds-mysql.git?ref=tags/2.0.0"
-  identifier        = "example"
+  source            = "https://github.com/Sharmio/eks-sops-demo/tree/main/tf-aws-rds-mysql"
+  identifier        = "your-identifier"
   engine_version    = "5.7.28"
   instance_class    = "db.t2.small"
   allocated_storage = 20
-  username          = "root"
-  password          = "YouShouldChangePasswordAfterApply!"
-
+  username          = "your-username"
+  password          = "your-password!"
   subnet_ids         = var.subnets
   vpc_id             = var.vpc_id
   source_cidr_blocks = var.source_cidr_blocks
