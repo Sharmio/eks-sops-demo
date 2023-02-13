@@ -1,3 +1,4 @@
+#
 #  _  ____  __ ____
 # | |/ /  \/  / ___|
 # | ' /| |\/| \___ \
@@ -7,8 +8,8 @@
 #
 ################################################################
 # KMS Key for Your-Service
-# StackID: 
-# Repository:
+# StackID: < Your CF stack ID >
+# Repository: < Your Repository Name>
 ################################################################
 AWSTemplateFormatVersion: '2010-09-09'
 Description: 'Security: KMS customer managed key(CMK) for your Environment'
